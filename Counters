@@ -1,0 +1,29 @@
+package com.mehmetcopur.sayacprojesi
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.os.CountDownTimer
+import kotlinx.android.synthetic.main.activity_main.*
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        object : CountDownTimer(15000,1000){
+            //Birincisi kaç milisaniye sayayım demektir
+            //ikincisi ise kaçar saniye geriye sayması gerektiğini giriyoruz.
+
+            //Bu iki fonksiyon ise kendiliğinden geliyor.
+            override fun onTick(p0: Long) {      //Herbir geriye saymada ne yapayım demektir
+                textView.text = "Kalan: ${p0}"
+
+            }
+
+            override fun onFinish() {     // Sayaç bitince ne yapayım diye soruyor.
+                textView.text = "Kalan: 0"
+            }
+
+        }
+    }
+}
