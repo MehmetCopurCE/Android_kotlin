@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 }
 
 
-
+---------------------------------------------------------------------------------------------------------
 
 
 package com.mehmetcopur.superkahramankitabi
@@ -109,7 +109,7 @@ class RecyclerAdapter (val kahramanListesi : ArrayList<String>,
 
 }
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 
 package com.mehmetcopur.superkahramankitabi
 
